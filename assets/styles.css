@@ -105,17 +105,16 @@ h4 {
 /*Hero */
 
 .header {
-  height: 600px;
   background-image: linear-gradient(
-      to bottom,
-      rgba(5, 4, 4, 0.342) 50%,
+      180deg,
+      rgba(116, 95, 95, 0.342) 50%,
       rgba(145, 129, 129, 0.274) 100%
     ),
     url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmuhiku.com%2Fblog%2Fwp-content%2Fuploads%2F2019%2F09%2FColombia-Kahvesi.jpg&f=1&nofb=1&ipt=1f81be27ad10fcd08989f342412f57daa85d40fb8c1457141cdbfba6fc2ff04c&ipo=images);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 1000px;
+  height: 100vh;
   position: relative;
   color: var(--blackColor);
   text-align: center;
@@ -159,8 +158,8 @@ h4 {
   width: 100%;
 }
 
-.about-us-content .about-us-grid .content-description > h3 {
-  margin-bottom: 120px;
+.about-us-content .about-us-grid .content-description > h2 {
+  margin-bottom: 20px;
 }
 
 .about-us-content .about-us-grid .content-description {
@@ -168,8 +167,13 @@ h4 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   text-align: center;
+}
+
+.about-us-content .about-us-grid .content-description .quienes-somos-text {
+  width: 80%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {
@@ -182,16 +186,107 @@ h4 {
 
 /*Testimonios*/
 
-.testimonio-flex {
-  display: flex;
+/* Testimonios container */
+.testimonios-content {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+}
+.testimonios-content > h2 {
+  text-align: center;
+  padding-bottom: 40px;
 }
 
-.testimonio-img{
+.testimonios-container {
+  background-color: white;
   display: flex;
-  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
 }
-.testimonio-img img{
+.testimonio {
+  flex-basis: calc(33.3% - 20px);
+}
+
+.testimonio-card-header {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimonio-card-header > img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+/*Sobre nosotros*/
+
+/* Sobre nosotros container */
+
+.staff-content {
+  background-color: #fbffcc;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.staff-content > h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.staff-container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.staff {
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  transition: left .5s ;
+}
+
+.staff-1 {
+  background-image: url("/assets/images/CEO.jpg");
+}
+.staff-2 {
+  background-image: url("/assets/images/CTO.jpg");
+}
+.staff-3 {
+  background-image: url("/assets/images/barista-1.jpg");
+}
+.staff-4 {
+  background-image: url("/assets/images/barista-2.jpg");
+}
+.staff-5 {
+  background-image: url("/assets/images/barista-3.jpg");
+}
+.staff-6 {
+  background-image: url("/assets/images/admon-general-woman.jpg");
+}
+
+/* .prueba > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+  display: block;
+} */
+
+/* .staff-1 {
+  background: url(/assets/images/CEO.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  position: relative;
+  height: 100%;
+} */
