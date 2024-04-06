@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="top-header">
         <div class="logo">
           <h1>Café Amanec<span class="half-logo">er</span></h1>
         </div>
         <nav class="nav-container">
           <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Testimonios</a>
-            <a href="#">Staff</a>
-            <a href="#">Clientes</a>
-            <a href="#">Producto</a>
+            <a href="#header">Home</a>
+            <a href="#about-us">About us</a>
+            <a href="#testimonios">Testimonios</a>
+            <a href="#staff">Staff</a>
+            <a href="#clients">Clientes</a>
+            <a href="#products">Productos</a>
           </div>
         </nav>
       </div>
     </header>
     <main class="main">
       <!-- Seccion sobbre nosotros -->
-      <section class="about-us-content">
+      <section class="about-us-content" id="about-us">
           <div class="second-title">
           <h2>Sobre nosotros</h2>
           </div>
@@ -62,7 +62,7 @@
           </div>
       </section>
       <!-- Seccion testimonios -->
-      <section class="testimonios-content">
+      <section class="testimonios-content" id="testimonios">
           <h2>Testimonios</h2>
         <article class="testimonios-container">
             <!-- Testimonio 1 -->
@@ -113,30 +113,30 @@
         </article>
       </section>
       <!-- Seccion staff -->
-      <section class="staff-content">
+      <section class="staff-content" id="staff">
           <h2>Staff</h2>
         <div class="staff-container">
           <div class="staff staff-1">
-            <h3>Edgar (CEO)</h3>
+            <h4>Edgar (CEO)</h4>
           </div>
           <div class="staff staff-2" >
-            <h3>Daniel (CTO)</h3>
+            <h4>Daniel (CTO)</h4>
           </div>
           <div class="staff staff-3" >
-            <h3>Juan (Barista 1)</h3>
+            <h4>Juan (Barista 1)</h4>
           </div>
           <div class="staff staff-4" >
-            <h3>Carlos (Barista 2)</h3>
+            <h4>Carlos (Barista 2)</h4>
           </div>
           <div class="staff staff-5" >
-            <h3>Esther (Barista 3)</h3>
+            <h4>Esther (Barista 3)</h4>
           </div>
           <div class="staff staff-6" >
-            <h3>Carmen (Administradora general)</h3>
+            <h4>Carmen (Administradora general)</h4>
           </div>
       </section>
       <!-- Seccion clientes frecuentes -->
-      <section class="clients">
+      <section class="clients" id="clients">
         <h2>Clientes frecuentes</h2>
         <div class="clients-logos container">
           <div class="clientes-logos">
@@ -158,7 +158,7 @@
           
       </section>
       <!-- Seccion productos -->
-      <section class="products-content container">
+      <section class="products-content container" id="products">
             <div class="products-title">
             <h2>Productos</h2>
           <div class="section-products-grid">
@@ -192,7 +192,6 @@
           <form name = "login" action="" method="get"></form>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-            <label for="send"> Enviar: </label>
             <input type="submit" name = "Enviar" id = "send" required >
         </div>
         <!-- Secciones principales -->
@@ -200,47 +199,50 @@
             <h4>Secciones principales</h4>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="#header">Home</a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="#about-us">About us</a>
               </li>
               <li>
-                <a href="#">Testimonios</a>
+                <a href="#testimonios">Testimonios</a>
               </li>
               <li>
-                <a href="#">Staff</a>
+                <a href="#staff">Staff</a>
               </li>
               <li>
-                <a href="#">Clientes</a>
+                <a href="#clients">Clientes</a>
               </li>
               <li>
-                <a href="#">Productos</a>
+                <a href="#products">Productos</a>
               </li>
             </ul>
         </div>
         <!-- Contacto y redes sociales -->
-        <div class="footer-links-contact">
-          <h4>Contacto</h4>
-            <ul>
-              <li>
-                Email: ecardona742@gmail.com
-              </li>
-              <li>Direccion: 1234 Street Adress,City,Country </li>
-            </ul>
-          <h4>Siguenos</h4>
-          <div class="social-link">
-            <a href="https://www.facebook.com/Edgardemjdm/?locale=es_LA" title="Visita mi Facebook">
-            <i class="fab fa-facebook-f"></i>
-            </a>  
-            <a href = "https://www.instagram.com/edgar.cardona97/" title="Visita mi Instagram"> 
-            <i class="fab fa-instagram"></i>
-            </a>     
-            <a href ="https://twitter.com/Edgar_Cardona21"title="Visita mi X"> 
-            <i class="fab fa-twitter"></i>
-            </a>    
-          </div>
+        <div class="footer-links-container">
+            <div class="footer-contact">
+              <h4>Contacto</h4>
+              <ul>
+                <li>
+                  Email: ecardona742@gmail.com
+                </li>
+                <li>Direccion: 1234 Street Adress,City,Country </li>
+              </ul>
+            </div>
+            <div class="social-link">
+              <h4>Siguenos</h4>
+              <a href="https://www.facebook.com/Edgardemjdm/?locale=es_LA" title="Visita mi Facebook">
+              <i class="fab fa-facebook-f"></i>
+              </a>  
+              <a href = "https://www.instagram.com/edgar.cardona97/" title="Visita mi Instagram"> 
+              <i class="fab fa-instagram"></i>
+              </a>     
+              <a href ="https://twitter.com/Edgar_Cardona21"title="Visita mi X"> 
+              <i class="fab fa-twitter"></i>
+              </a>    
+            </div>
         </div>
+      </div> 
     </footer>
   </body>
 </html>

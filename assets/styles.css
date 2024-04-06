@@ -137,6 +137,11 @@ h4 {
   gap: 20px;
 }
 
+.nav-links a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .nav-links a {
   display: flex;
   font-size: 20px;
@@ -213,6 +218,7 @@ h4 {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
 .testimonio {
@@ -247,6 +253,8 @@ h4 {
   padding-bottom: 40px;
   width: 80%;
   margin: 0 auto;
+  margin-top: 150px
+  
 }
 
 .staff-content > h2 {
@@ -274,26 +282,65 @@ h4 {
   width: 100%;
   background-size: cover;
   transition: left .5s ;
+  color: white;
+}
+
+.staff>h4{
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
 }
 
 .staff-1 {
-  background-image: url("/assets/images/CEO.jpg");
+  background-image: linear-gradient(
+    180deg,
+    rgba(116, 95, 95, 0.342) 50%,
+    rgba(145, 129, 129, 0.274) 100%
+  ), url("/assets/images/CEO.jpg");
+  position: relative;
 }
 .staff-2 {
-  background-image: url("/assets/images/CTO.jpg");
+  background-image:linear-gradient(
+    180deg,
+    rgba(116, 95, 95, 0.342) 50%,
+    rgba(145, 129, 129, 0.274) 100%
+  ),  url("/assets/images/CTO.jpg");
+  position: relative;
 }
 .staff-3 {
-  background-image: url("/assets/images/barista-1.jpg");
+  background-image:linear-gradient(
+    180deg,
+    rgba(116, 95, 95, 0.342) 50%,
+    rgba(145, 129, 129, 0.274) 100%
+  ),  url("/assets/images/barista-1.jpg");
+  position: relative;
 }
 .staff-4 {
-  background-image: url("/assets/images/barista-2.jpg");
+  background-image:linear-gradient(
+    180deg,
+    rgba(116, 95, 95, 0.342) 50%,
+    rgba(145, 129, 129, 0.274) 100%
+  ),  url("/assets/images/barista-2.jpg");
+  position: relative;
 }
 .staff-5 {
-  background-image: url("/assets/images/barista-3.jpg");
+  background-image:linear-gradient(
+    180deg,
+    rgba(116, 95, 95, 0.342) 50%,
+    rgba(145, 129, 129, 0.274) 100%
+  ),  url("/assets/images/barista-3.jpg");
+  position: relative;
 }
 .staff-6 {
-  background-image: url("/assets/images/admon-general-woman.jpg");
+  background-image:linear-gradient(
+    180deg,
+    rgba(116, 95, 95, 0.342) 50%,
+    rgba(145, 129, 129, 0.274) 100%
+    ),  url("/assets/images/admon-general-woman.jpg");
+    position: relative;
 }
+
+
 
 /* .prueba > img {
   width: 100%;
@@ -431,3 +478,124 @@ h4 {
   
 
 }
+
+
+/* Footer */
+
+/* Footer container */
+
+.footer-container{
+  background-color: var(--third-color);
+  width: 100%;
+  height: 50vh;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+
+@media screen and (max-width:768px) {
+  .footer-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+.politicas-copy{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+
+.email-submit{
+  font-weight: 700;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+
+#send{
+  background-color: var(--fourth);
+  padding: 10px 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-style: none;
+}
+
+#send:hover{
+  background-color: var(--fifth-color);
+  transform: scale(1.1) ;
+}
+
+.footer-sections{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.footer-sections>ul{
+  display: flex;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-sections ul li {
+    color: #f13565;
+}
+
+
+.footer-sections li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-links-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.social-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.social-link a {
+  display: inline-block;
+  min-height: 40px;
+  width: 40px;
+  background-color:var(--fourth);
+  margin: 0 10px 10px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: var(--whiteColor);
+  transition: all .5s ease;
+}
+
+.social-link a:hover {
+  background-color: var(--fifth-color);
+}
+
